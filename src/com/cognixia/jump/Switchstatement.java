@@ -53,7 +53,19 @@ public class Switchstatement {
 			default:
 				System.out.println("E or something else");
 				break;
+			}
+		
+		String month = "Janufary";
+		switch(month.toLowerCase()) {
+		case "january":
+			System.out.println("it is " + month);
+			break;
+		case "july":
+			System.out.println("it is " + month);
+			break;
 			
+		default:
+			System.out.println("um not sure " + month);
 		}
 		
 	}
