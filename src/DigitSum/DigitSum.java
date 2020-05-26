@@ -13,7 +13,7 @@ public class DigitSum {
 		//the numbers from 0-9 have 1 digit so we dont want to process them
 		//also we dont want to process negative numbers, so also return -1 for negative
 		//numbers
-		System.out.println(sumDigits(10));
+		System.out.println(sumDigits(125));
 	}
 	
 	private static int sumDigits(int number) {
@@ -23,11 +23,14 @@ public class DigitSum {
 		}
 		
 		int sum = 0;
-		while(number > 0) {
+		//125 > 125/10  = 12 > *10 = 120 > 125-120 = 5
+		while (number > 0) {
 			int digit = number % 10;
-			sum = sum + digit;
-		
 			number = number / 10; 
+			sum = sum + digit;
+			
+			//drop the least-significant digit 
+             
 		
 		}
 		
